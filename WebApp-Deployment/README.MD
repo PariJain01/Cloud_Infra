@@ -13,8 +13,7 @@
 
 ### 📄 `02-webapp-deployment/README.md`
 
-````markdown
-# 🌐 Task 2: Azure Web App Deployment with Welcome Page
+# 🌐Azure Web App Deployment with Welcome Page
 
 This task demonstrates how to:
 
@@ -45,7 +44,7 @@ az appservice plan create \
   --resource-group myResourceGroup \
   --sku FREE \
   --is-linux
-````
+```
 
 ---
 

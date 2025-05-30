@@ -1,6 +1,5 @@
 ### 📄 `01-vm-deployment/README.md`
 
-````markdown
 # 🚀 Task 1: Deploy Linux and Windows Virtual Machines on Azure
 
 This task involves provisioning one **Linux VM** and one **Windows VM** in Azure, and verifying access using **SSH** for Linux and **RDP** for Windows.
@@ -22,7 +21,7 @@ This task involves provisioning one **Linux VM** and one **Windows VM** in Azure
 
 ```bash
 az group create --name myResourceGroup --location eastus
-````
+```
 
 ---
 
@@ -66,21 +65,19 @@ az vm create \
 ### Linux VM: SSH
 
 ```bash
-ssh Adminn@<LinuxVM_Public_IP>
+ssh Adminn@172.191.194.88
 ```
-
-> Replace `<LinuxVM_Public_IP>` with the actual public IP.
 
 ---
 
 ### Windows VM: RDP
 
 1. Use Remote Desktop Connection (`mstsc`)
-2. Enter: `<WindowsVM_Public_IP>`
+2. Enter: `172.172.144.209`
 3. Log in with:
 
    * **Username:** `Adminn`
-   * **Password:** (as created)
+   * **Password:** 
 
 ---
 

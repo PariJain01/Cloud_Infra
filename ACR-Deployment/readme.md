@@ -13,8 +13,7 @@
 
 ### ✅ `README.md`
 
-````markdown
-# 🐳 ACR + Azure Container Instance Deployment
+### 🐳 ACR + Azure Container Instance Deployment
 
 This task demonstrates how to:
 
@@ -51,13 +50,13 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
-````
+```
 
----
+ 
 
-### `requirements.txt`
+### requirements.txt
 
-```txt
+```
 flask
 ```
 

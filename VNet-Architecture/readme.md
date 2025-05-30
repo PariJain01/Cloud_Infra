@@ -111,4 +111,3 @@ Ensure all VMs respond successfully (firewalls/NIC NSGs must allow ICMP or SSH/p
 
 ---
 
-✅ You have successfully implemented a Hub-and-Spoke architecture in Azure and verified connectivity between the VMs.

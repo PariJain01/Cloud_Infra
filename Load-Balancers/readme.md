@@ -1,5 +1,5 @@
 
-## ✅ Task 7: Setup Internal and External Load Balancers in Azure
+## ✅ Setup Internal and External Load Balancers in Azure
 
 ### 🔧 Objective
 

@@ -1,8 +1,7 @@
 
 ###  Deploy Python App via Azure Container Instance
 
-````markdown
-# Task 4 – Deploy Python Flask App to Azure Container Instance via ACR
+# Deploy Python Flask App to Azure Container Instance via ACR
 
 This task demonstrates deploying a simple Python web application to an Azure Container Instance (ACI) using an image pushed to Azure Container Registry (ACR).
 
@@ -35,13 +34,14 @@ task-4/
 ├── requirements.txt
 ├── Dockerfile
 └── acr-push.sh
-````
+```
 
 ---
 
 ## 🐳 Step 1: Dockerfile
 
-```dockerfile
+``` dockerfile
+
 FROM python:3.11-slim
 
 WORKDIR /app

@@ -1,4 +1,4 @@
-# Task 6: Set up a Domain with DNS and Private Link in Azure
+# Set up a Domain with DNS and Private Link in Azure
 
 ## Objective
 
