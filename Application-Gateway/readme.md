@@ -114,22 +114,3 @@ az network application-gateway rule create \
 
 ---
 
-### ✅ Verification
-
-1. Ensure web apps on VMs are running (like Python HTTP or Apache).
-2. Access the Public IP via browser:
-
-   ```
-   http://<AppGatewayPublicIP>
-   ```
-
----
-
-### 📸 Do You Want?
-
-* A **README.md**?
-* A **reference diagram**?
-* A **shell script (app-gateway.sh)**?
-* A **test script**?
-
-Let me know, and I’ll generate them for you!
