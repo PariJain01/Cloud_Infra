@@ -1,7 +1,3 @@
-Here's a breakdown of how to approach **Task 9** with the necessary Azure CLI commands, code snippets, and testing steps. This will help you prepare files, README, and documentation for GitHub submission.
-
----
-
 ### ✅ **Azure Storage Account Setup and Blob Access**
 
 #### 1. **Create a Storage Account**
@@ -164,7 +160,7 @@ az storage file upload \
 
 ### ✅ **Azure File Sync**
 
-* Set up Azure File Sync via portal or PowerShell (CLI support is limited).
+* Set up Azure File Sync via portal.
 * Create:
 
   * Storage Sync Service
@@ -173,12 +169,3 @@ az storage file upload \
   * Server endpoint
 
 ---
-
-### 📄 Files You Can Push to GitHub:
-
-1. `README.md` – explanation and steps for Task 9
-2. `policy.json` – for lifecycle policy
-3. Screenshots or JSON outputs
-4. `auth-test.sh` – demo script for testing access keys/SAS
-
-Would you like me to generate these files now?
