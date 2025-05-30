@@ -1,0 +1,5 @@
+az storage blob set-tier \
+  --account-name mystorageacct12345 \
+  --container-name mycontainer \
+  --name sample.txt \
+  --tier Cool

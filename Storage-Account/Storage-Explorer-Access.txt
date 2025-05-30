@@ -1,0 +1,12 @@
+az storage container generate-sas \
+  --name mycontainer \
+  --account-name mystorageacct12345 \
+  --permissions r \
+  --expiry 2025-12-31T23:59:00Z \
+  --output tsv
+
+
+
+Use this SAS token in a URL:
+
+https://mystorageacct12345.blob.core.windows.net/mycontainer/sample.txt?<SAS_TOKEN>

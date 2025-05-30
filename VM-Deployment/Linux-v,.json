@@ -1,0 +1,89 @@
+{
+    "name": "LinuxVM",
+    "id": "/subscriptions/4d1741c7-a110-4fa0-8cab-b741dc4030c9/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/LinuxVM",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "5e1cac97-1ead-40f9-a0c8-c1a7d4be70c6",
+        "additionalCapabilities": {
+            "hibernationEnabled": false
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "canonical",
+                "offer": "ubuntu-24_04-lts",
+                "sku": "server",
+                "version": "latest",
+                "exactVersion": "24.04.202505210"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "LinuxVM_disk1_85d13c51c02a4118a849aa4ea58e89b9",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/4d1741c7-a110-4fa0-8cab-b741dc4030c9/resourceGroups/myResourceGroup/providers/Microsoft.Compute/disks/LinuxVM_disk1_85d13c51c02a4118a849aa4ea58e89b9"
+                },
+                "deleteOption": "Delete"
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "LinuxVM",
+            "adminUsername": "Adminn",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": false,
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/4d1741c7-a110-4fa0-8cab-b741dc4030c9/resourceGroups/myResourceGroup/providers/Microsoft.Network/networkInterfaces/linuxvm107",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        }
+    },
+    "resources": [
+        {
+            "name": "enablevmAccess",
+            "id": "/subscriptions/4d1741c7-a110-4fa0-8cab-b741dc4030c9/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/LinuxVM/extensions/enablevmAccess",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.OSTCExtensions",
+                "type": "VMAccessForLinux",
+                "typeHandlerVersion": "1.5"
+            }
+        }
+    ],
+    "apiVersion": "2021-03-01"
+}

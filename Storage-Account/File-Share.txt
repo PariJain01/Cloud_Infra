@@ -1,0 +1,14 @@
+Create a file share:-
+
+   az storage share create \
+  --name myfileshare \
+  --account-name mystorageacct12345
+
+
+upload a file:-
+
+  az storage file upload \
+  --share-name myfileshare \
+  --source ./sample.txt \
+  --path sample.txt \
+  --account-name mystorageacct12345

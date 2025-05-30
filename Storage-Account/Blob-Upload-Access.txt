@@ -1,0 +1,10 @@
+az storage container create \
+  --account-name mystorageacct12345 \
+  --name mycontainer \
+  --public-access blob
+
+az storage blob upload \
+  --account-name mystorageacct12345 \
+  --container-name mycontainer \
+  --name sample.txt \
+  --file sample.txt

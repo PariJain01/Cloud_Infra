@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {
+      "enabled": true,
+      "name": "deleteOldBlobs",
+      "type": "Lifecycle",
+      "definition": {
+        "filters": {
+          "blobTypes": ["blockBlob"],
+          "prefixMatch": ["sample"]
+        },
+        "actions": {
+          "baseBlob": {
+            "delete": {
+              "daysAfterModificationGreaterThan": 30
+            },
+            "tierToCool": {
+              "daysAfterModificationGreaterThan": 10
+            },
+            "tierToArchive": {
+              "daysAfterModificationGreaterThan": 20
+            }
+          },
+          "snapshot": {
+            "delete": {
+              "daysAfterCreationGreaterThan": 30
+            }
+          }
+        }
+      }
+    }
+  ]
+}

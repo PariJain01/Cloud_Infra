@@ -1,0 +1,75 @@
+{
+    "name": "WindowVm",
+    "id": "/subscriptions/4d1741c7-a110-4fa0-8cab-b741dc4030c9/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/WindowVm",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "9577a595-b1db-4e87-bc3c-e52f08b2cde8",
+        "additionalCapabilities": {
+            "hibernationEnabled": false
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2025-datacenter-azure-edition",
+                "version": "latest",
+                "exactVersion": "26100.3775.250510"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "WindowVm_OsDisk_1_6c3a8927942e4f6eba55fcaba7a6ebd4",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/4d1741c7-a110-4fa0-8cab-b741dc4030c9/resourceGroups/myResourceGroup/providers/Microsoft.Compute/disks/WindowVm_OsDisk_1_6c3a8927942e4f6eba55fcaba7a6ebd4"
+                },
+                "deleteOption": "Delete"
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "WindowVm",
+            "adminUsername": "Adminn",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true,
+                "patchSettings": {
+                    "patchMode": "AutomaticByPlatform",
+                    "assessmentMode": "ImageDefault",
+                    "enableHotpatching": true
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/4d1741c7-a110-4fa0-8cab-b741dc4030c9/resourceGroups/myResourceGroup/providers/Microsoft.Network/networkInterfaces/windowvm206",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        }
+    },
+    "apiVersion": "2021-03-01"
+}

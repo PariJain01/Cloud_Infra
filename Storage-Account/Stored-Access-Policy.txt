@@ -1,0 +1,6 @@
+az storage container policy create \
+  --account-name mystorageacct12345 \
+  --container-name mycontainer \
+  --name myPolicy \
+  --permissions rl \
+  --expiry 2025-12-31T23:59:00Z
